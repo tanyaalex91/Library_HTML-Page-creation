@@ -1,0 +1,128 @@
+#shapka{
+  text-align: left; 
+  width: 750px; 
+  background:#FFF5EE; 
+  height: 50px; 
+  margin-right: auto; 
+  margin-left: auto;
+  padding: 10px; 
+  font-size: 22px;
+  font-family: "Trebuchet MS";
+}
+
+
+/* для контейнера */
+#container {
+  width: 770px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  font: 16px "Trebuchet MS";
+  color:white
+ }
+/* для блока 2 - меню */
+#menu {
+  width: 200px;  
+  float: left; 
+ 
+   
+  padding: 10px;
+ }
+ 
+ 
+ .bullet {
+margin-left: 0;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #CADFCF;
+padding: 0.6em;
+border-radius: 4px;
+background: #FEFEFE;
+color: #231F20;
+font-family: "Trebuchet MS", "Lucida Sans";
+}
+.bullet li:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 16px;
+font-weight: bold;
+color: #DCC24B;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
+/* для блока 3 - контент */
+#content { 
+    width: 400px; 
+    float: left;  
+    padding: 10px; 
+	color: black;
+	
+    
+   } 
+   
+   .img{
+	   
+	  width: 100px; 
+	   
+   }
+   
+ .border {
+list-style: none;
+padding: 0;
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+
+padding: 7px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 10px solid #f05d22; 
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 16px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+background: #FFF8DC;
+}
+.border li:nth-child(2)
+.border li:nth-child(3)
+.border li:nth-child(4)
+.border li:nth-child(5)
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+   
+/* для блока 4 - подвал */
+#bottom{
+	width:750px;  
+	clear:left; 
+	padding: 10px; 
+	background:#444;
+	color:#fff;
+	margin-right: auto; 
+    margin-left: auto; 
+	font-family:"Trebuchet MS";
+}
+</style>
+</head> 
+<body>
+<div id="shapka">1</div>
+<div id="shapka-menu">2</div>
+<div id="container">
+	<div id="menu">3</div>
+	<div id="content">4</div>
+</div>
+<div id="bottom">5</div>
+</body>
